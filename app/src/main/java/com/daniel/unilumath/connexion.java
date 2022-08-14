@@ -7,21 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class connexion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_action_principale);
+        setContentView(R.layout.activity_main);
         this.eventEmitter();
     }
     private  void eventEmitter(){
-        Button start = (Button)findViewById(R.id.about);
-
-        start.setOnClickListener(new View.OnClickListener() {
+        Button bot = (Button)findViewById(R.id.connect);
+        bot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ecran = new Intent(MainActivity2.this, ActionPrincipale.class);
+                Intent ecran = new Intent(connexion.this, MainActivity2.class);
                 startActivity(ecran);
             }
         });

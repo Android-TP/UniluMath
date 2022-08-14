@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#1A8BB0DA"
+            android:background="@drawable/unilublur"
             android:clipToPadding="true"
             android:orientation="vertical">
 
@@ -41,6 +41,7 @@
                         android:elevation="6dp"
                         android:gravity="center"
                         android:text="connexion"
+                        android:textColor="#FFFFFF"
                         android:textSize="36sp"
                         android:textStyle="bold|italic" />
                 </LinearLayout>
@@ -49,6 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="#99090000"
                     android:clipToPadding="false"
                     android:orientation="horizontal">
 
@@ -67,6 +69,8 @@
                             android:gravity="center|center_horizontal"
                             android:hint="Télephone"
                             android:inputType="phone"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#B1AFAF"
                             android:textStyle="bold" />
 
                         <EditText
@@ -79,6 +83,8 @@
                             android:gravity="center"
                             android:hint="mot de passe"
                             android:inputType="textPassword"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#9F9E9E"
                             android:textStyle="bold" />
 
                     </LinearLayout>

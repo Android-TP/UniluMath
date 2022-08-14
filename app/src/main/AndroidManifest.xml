@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UniluMath">
-        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".ActionPrincipale"></activity>
+        <activity android:name=".connexion" />
+        <activity android:name=".inscription" />
+        <activity android:name=".Accueil_activity" />
+        <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

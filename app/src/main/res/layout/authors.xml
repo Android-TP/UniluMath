@@ -173,7 +173,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Etudiante informatique" />
+                            android:text="Etudiante en informatique" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -338,7 +338,7 @@
                                 android:id="@+id/textView8"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Developpeur wedb full stack" />
+                                android:text="Developpeur web full stack" />
                         </LinearLayout>
                     </LinearLayout>
 

@@ -13,19 +13,30 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_accueil_activity);
         this.eventEmitter();
     }
 
    private void eventEmitter(){
-       Button bat = (Button)findViewById(R.id.connect);
+       Button bat = (Button)findViewById(R.id.connexion);
        bat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ecran2 = new Intent(MainActivity.this, MainActivity2.class);
+                Intent ecran2 = new Intent(MainActivity.this, connexion.class);
                 startActivity(ecran2);
             }
         });
+
+       Button action1 = (Button)findViewById(R.id.inscription);
+       action1.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent ecran3 = new Intent(MainActivity.this, inscription.class);
+               startActivity(ecran3);
+           }
+       });
+
+
     }
 
    
