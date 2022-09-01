@@ -19,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
    private void eventEmitter(){
        Button bat = (Button)findViewById(R.id.connexion);
+       Button show_menu = (Button) findViewById(R.id.action_menu);
+       show_menu.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               ItemListDialogFragment.newInstance(3).show(getSupportFragmentManager(), "dialog");
+           }
+       });
        bat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
