@@ -10,13 +10,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
             <LinearLayout
@@ -28,24 +27,20 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center|center_horizontal"
-                    android:background="#99201E1E"
-                    android:foregroundGravity="center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_gravity="center|center_horizontal"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -53,133 +48,113 @@
                                 android:layout_weight="1"
                                 android:orientation="horizontal">
 
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:gravity="right"
-                                    android:orientation="vertical">
-
-                                    <Button
-                                        android:id="@+id/action_menu"
-                                        android:layout_width="50dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginRight="30dp"
-                                        android:background="#00070707"
-                                        android:foreground="@android:drawable/ic_menu_sort_by_size" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textView12"
+                                <ImageView
+                                    android:id="@+id/imageView6"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
                                     android:layout_weight="1"
-                                    android:elevation="10dp"
-                                    android:gravity="center_horizontal"
-                                    android:text="Bienvenue"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    app:srcCompat="@drawable/logo_unilu" />
                             </LinearLayout>
 
+                            <Button
+                                android:id="@+id/action_menu"
+                                android:layout_width="130dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:foreground="@drawable/t_l_chargement" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_weight="1"
+                                android:elevation="15dp"
+                                android:gravity="center|center_horizontal"
+                                android:text="@string/welcome"
+                                android:textSize="36sp"
+                                android:textStyle="bold" />
                         </LinearLayout>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_weight="1"
-                            android:elevation="10dp"
-                            android:shadowDx="5"
-                            android:shadowDy="5"
-                            android:text="en Math-info"
-                            android:textColor="#FFFFFF"
-                            android:textSize="24sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#99121111"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="350dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_horizontal"
+                        <Button
+                            android:id="@+id/pre_inscription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="horizontal">
+                            android:elevation="15dp"
+                            android:background="@drawable/arrondi"
+                            android:text="@string/preinscription"
+                            app:backgroundTint="#1565C0" />
+                    </LinearLayout>
 
-                            <Button
-                                android:id="@+id/connexion"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom"
-                                android:layout_weight="1"
-                                android:background="@drawable/arrondi"
-                                android:text="connexion" />
-                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="350dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="10dp"
+                        <Button
+                            android:id="@+id/inscription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="horizontal">
+                            android:elevation="15dp"
+                            android:background="@drawable/arrondi"
+                            android:text="@string/action_sign_in_short"
+                            app:backgroundTint="#1565C0" />
+                    </LinearLayout>
 
-                            <Button
-                                android:id="@+id/inscription"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@drawable/arrondi"
-                                android:text="inscription" />
-                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/connexion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="15dp"
+                            android:background="@drawable/arrondi"
+                            android:text="@string/login"
+                            app:backgroundTint="#1565C0" />
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

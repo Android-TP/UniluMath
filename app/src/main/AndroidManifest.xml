@@ -8,8 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UniluMath">
-        <activity android:name=".ActionPrincipale"></activity>
+        android:theme="@style/hide">
+        <activity
+            android:name=".Etudiant"
+            android:label="@string/title_activity_etudiant"
+            android:theme="@style/hide.NoActionBar"></activity>
+
+        <activity
+            android:name=".Preinscription"
+            android:label="@string/title_activity_preinscription"
+            android:theme="@style/hide.NoActionBar" />
+        <activity android:name=".ActionPrincipale" />
         <activity android:name=".connexion" />
         <activity android:name=".inscription" />
         <activity android:name=".Accueil_activity" />

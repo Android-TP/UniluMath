@@ -20,12 +20,15 @@ public class MainActivity extends AppCompatActivity {
    private void eventEmitter(){
        Button bat = (Button)findViewById(R.id.connexion);
        Button show_menu = (Button) findViewById(R.id.action_menu);
-       show_menu.setOnClickListener(new View.OnClickListener() {
+        show_menu.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
                ItemListDialogFragment.newInstance(3).show(getSupportFragmentManager(), "dialog");
            }
        });
+
+
+
        bat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View view) {
                Intent ecran3 = new Intent(MainActivity.this, inscription.class);
                startActivity(ecran3);
+           }
+       });
+
+       Button preinscription = (Button)findViewById(R.id.pre_inscription);
+       preinscription.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent ecran4 = new Intent(MainActivity.this, Preinscription.class);
+               startActivity(ecran4);
            }
        });
 

@@ -20,7 +20,7 @@ public class connexion extends AppCompatActivity {
         bot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ecran = new Intent(connexion.this, MainActivity2.class);
+                Intent ecran = new Intent(connexion.this, Etudiant.class);
                 startActivity(ecran);
             }
         });
