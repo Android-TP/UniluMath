@@ -9,11 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/hide">
+        <activity android:name=".Preuve"></activity>
+        <activity android:name=".Recours" />
+        <activity android:name=".Moyenne" />
+        <activity android:name=".Infos" />
+        <activity android:name=".Minerval" />
+        <activity android:name=".Horaire" />
         <activity
             android:name=".Etudiant"
             android:label="@string/title_activity_etudiant"
-            android:theme="@style/hide.NoActionBar"></activity>
-
+            android:theme="@style/hide.NoActionBar" />
         <activity
             android:name=".Preinscription"
             android:label="@string/title_activity_preinscription"
