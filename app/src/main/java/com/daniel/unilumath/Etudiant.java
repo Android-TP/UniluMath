@@ -42,7 +42,7 @@ public class Etudiant extends AppCompatActivity {
             }
         });
 
-        moyenne.setOnClickListener(new View.OnClickListener() {
+        moyenne.setOnClickListener(new View.OnClickListener() { //activity moyenne
             @Override
             public void onClick(View view) {
                 Intent activity_moyenne = new Intent(Etudiant.this, Moyenne.class);
@@ -60,7 +60,7 @@ public class Etudiant extends AppCompatActivity {
         });
         infos_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //activity informations
                 Intent informations = new Intent(Etudiant.this, Infos.class);
                 startActivity(informations);
             }
