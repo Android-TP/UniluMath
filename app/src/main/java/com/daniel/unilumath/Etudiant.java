@@ -23,7 +23,7 @@ public class Etudiant extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_etudiant2);
         this.event();
-        this.send("");
+        this.send("example data");
     }
     protected void event(){
         Button horraire = (Button)findViewById(R.id.horaire);
