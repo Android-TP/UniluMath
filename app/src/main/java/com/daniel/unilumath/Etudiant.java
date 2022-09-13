@@ -36,7 +36,7 @@ public class Etudiant extends AppCompatActivity {
         Button preuve = (Button)findViewById(R.id.button80);
         preuve.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {//start activity preuve
                 Intent activite = new Intent(Etudiant.this, Preuve.class);
                 startActivity(activite);
             }
