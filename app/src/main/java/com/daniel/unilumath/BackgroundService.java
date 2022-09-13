@@ -8,7 +8,7 @@ import android.os.Binder;
 import android.os.CountDownTimer;
 import android.os.IBinder;
 
-public class BackgroundService extends Service {
+public class BackgroundService extends Service { //le service d'arriere plan
     private  BackgroundService worker;
 
     public BackgroundService() {
