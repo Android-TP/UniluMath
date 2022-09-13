@@ -26,6 +26,7 @@ public class Etudiant extends AppCompatActivity {
         this.send("example data");
     }
     protected void event(){
+        //event handler
         Button horraire = (Button)findViewById(R.id.horaire);
         Button minerval = (Button)findViewById(R.id.button8);
         Button f_connexe = (Button)findViewById(R.id.button7);
